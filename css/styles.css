@@ -104,8 +104,8 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 700;
-  line-height: 1.2;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 h1, .h1 {
@@ -3029,33 +3029,33 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1D809F;
-  border-color: #1D809F;
+  color: #2C2C2C;
+  background-color: #ffd900;
+  border-color: #ffd900;
+  font-family: 'Century Gothic';
+  font-weight: bold;
 }
 .btn-primary:hover {
-  color: #fff;
-  background-color: #196d87;
-  border-color: #17667f;
+  color: #2C2C2C;
+  background-color: #ffd900;
+  border-color: #ffd900;
+  font-family: 'Century Gothic';
+  font-weight: bold;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #196d87;
-  border-color: #17667f;
-  box-shadow: 0 0 0 0.25rem rgba(63, 147, 173, 0.5);
+  background-color: #ffd900;
+  border-color: #ffd900;
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #17667f;
-  border-color: #166077;
-}
-.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(63, 147, 173, 0.5);
+  background-color: #ffd900;
+  border-color: #ffd900;
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #1D809F;
-  border-color: #1D809F;
+  background-color: #ffd900;
+  border-color: #ffd900;
 }
 
 .btn-secondary {
@@ -11419,13 +11419,6 @@ html {
   padding: 1.25rem 2.5rem;
 }
 
-.callout {
-  padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .callout h2, .callout .h2 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -11476,8 +11469,8 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
-  background-position: center center;
+  background: linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.4) 100%), url(../assets/img/bg2.jpg);
+  background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11486,6 +11479,24 @@ footer.footer .social-link:hover {
   margin: 0;
   padding: 0;
 }
+.typewriter h1 {
+  color: #000;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
@@ -11570,3 +11581,4 @@ footer.footer .social-link:hover {
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
+
